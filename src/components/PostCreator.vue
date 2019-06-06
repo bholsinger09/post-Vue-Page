@@ -20,7 +20,8 @@
       handlePost() {
         let data = {
           post: this.post,
-          name: "User"
+          name: "users"
+
         }
         this$store.dispatch('getPosts', data)
         this.post = ""

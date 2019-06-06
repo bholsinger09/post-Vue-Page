@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <div>
-      <h3>Daily Post Creater</h3>
+      <h3>Welcome to Your-Blogger</h3>
       <post-creator />
     </div>
 
     <div>
-      <h3>Post list Template</h3>
+      <h5 id="post-header">Check out your posts : </h5>
       <post-list />
     </div>
   </div>
@@ -25,3 +25,9 @@
     }
   };
 </script>
+
+<style>
+  #post-header {
+    margin-top: 3rem;
+  }
+</style>

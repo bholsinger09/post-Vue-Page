@@ -1,8 +1,8 @@
 <template>
   <div class="post-list">
-    <div class="posts" v-for="post in posts" :key="post._id">
+    <!-- <div class="posts" v-for="post in posts" :key="post._id">
       {{post.user}}
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -10,7 +10,7 @@
   export default {
     name: "PostList",
     mounted() {
-      this.$store.dispatch('getPosts')
+      //this.$store.dispatch('getPosts')
     },
 
     computer: {
