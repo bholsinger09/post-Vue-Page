@@ -19,17 +19,18 @@
     methods: {
       handlePost() {
         let data = {
-          post: this.post,
-          name: "users"
+          post: this.post
+
 
         }
-        this$store.dispatch('getPosts', data)
+        debugger
+        this.$store.dispatch('sendPost', data)
         this.post = ""
       }
     },
     computed: {
       posts() {
-        return this.$store.state.posts
+        return this.$store.state.posts;
       }
     }
   };
